@@ -1,4 +1,4 @@
-FROM jupyter/base-notebook
+FROM jupyter/csci3130
 
 LABEL maintainer="Joshua L. Phillips <https://www.cs.mtsu.edu/~jphillips/>"
 
@@ -7,18 +7,6 @@ USER root
 # Additional tools
 RUN apt-get update && \
     apt-get install -y \
-    gcc \
-    g++ \
-    make \
-    autoconf \
-    libtool \
-    vim \
-    less \
-    ssh \
-    rsync \
-    zip \
-    tmux \
-    gdb \
     gromacs \
     grace \
     && apt-get clean
